@@ -1,0 +1,28 @@
+{% extends 'main/base.html' %} {% block title %}Список заявок{% endblock %} {% block content %}
+<h1>Заявки</h1>
+
+<table class="table table-striped table-hover">
+	<thead>
+		<tr>
+			<th>Имя</th>
+			<th>Телефон</th>
+			<th>Почта</th>
+			<th>Тема</th>
+			<th>Статус</th>
+			<th>Дата создания</th>
+		</tr>
+	</thead>
+	<tbody>
+		{% for r in requests %}
+		<tr>
+			<td>{{ r.name }}</td>
+			<td>{{ r.phone }}</td>
+			<td>{{ r.email }}</td>
+			<td>{{ r.subject }}</td>
+			<td>{{ r.get_status_display }}</td>
+			<td>{{ r.created_at }}</td>
+		</tr>
+		{% endfor %}
+	</tbody>
+</table>
+{% endblock %}
