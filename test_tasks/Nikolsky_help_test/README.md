@@ -11,7 +11,7 @@
 ## Установка и запуск
 
 1. Клонировать репозиторий и перейти в папку проекта:
-   `git clone https://github.com/TheDragonBald/programming-training/tree/main/test_tasks/Nikolsky_help_test` → `cd <папка>`
+   `git clone git clone https://github.com/TheDragonBald/programming-training.git` → `cd programming-training/test_tasks/Nikolsky_help_test`
 2. Создать и активировать виртуальное окружение:
    `python -m venv venv` → `.\venv\Scripts\activate`
 3. Установить зависимости: `pip install -r requirements.txt`
