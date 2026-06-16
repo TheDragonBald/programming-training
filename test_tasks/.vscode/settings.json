@@ -1,0 +1,9 @@
+{
+	"python-envs.pythonProjects": [
+		{
+			"path": "Yandex_Crowd_test",
+			"envManager": "ms-python.python:venv",
+			"packageManager": "ms-python.python:pip"
+		}
+	]
+}
